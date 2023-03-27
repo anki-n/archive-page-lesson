@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="padded">
+   <div class="capped-width grid-center">
+       <div class="col-9 padded-05 center margin-b-1">
+           <h1>Latest on the blog</h1>
+       </div>
+       {% for post in site.posts limit:12 %}
+
+       {% include post-item-square.html %}
+
+       {% endfor %}
+   </div>
+</section>
