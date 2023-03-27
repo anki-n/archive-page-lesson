@@ -3,3 +3,11 @@ layout: default
 title: Travel Posts
 category: travel
 ---
+
+<section class="padded grid">
+    {% for post in site.categories[page.category] %}
+
+        {% include post-item-square.html %}
+        
+    {% endfor %}
+</section>
